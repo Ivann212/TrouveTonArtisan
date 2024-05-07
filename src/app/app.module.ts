@@ -13,6 +13,10 @@ import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { DonneespersonnellesComponent } from './donneespersonnelles/donneespersonnelles.component';
+import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
+import { CookiesComponent } from './cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { AlimentationComponent } from './alimentation/alimentation.component';
     BatimentComponent,
     ServicesComponent,
     FabricationComponent,
-    AlimentationComponent
+    AlimentationComponent,
+    MentionsLegalesComponent,
+    DonneespersonnellesComponent,
+    AccessibiliteComponent,
+    CookiesComponent
   ],
   imports: [
     BrowserModule,

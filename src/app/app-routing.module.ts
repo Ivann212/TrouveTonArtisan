@@ -10,6 +10,10 @@ import { ServicesComponent } from './services/services.component';
 import { BatimentComponent } from './batiment/batiment.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
+import { CookiesComponent } from './cookies/cookies.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
+import { DonneespersonnellesComponent } from './donneespersonnelles/donneespersonnelles.component';
 
 const routes: Routes = [
   {path: "", component: AccueilComponent}, 
@@ -19,6 +23,10 @@ const routes: Routes = [
   {path: "batiment", component: BatimentComponent}, 
   {path: "alimentation", component: AlimentationComponent}, 
   {path: "fabrication", component: FabricationComponent},
+  {path: "cookies", component: CookiesComponent},
+  {path: "mentionslegales", component: MentionsLegalesComponent},
+  {path: "accessibilite", component: AccessibiliteComponent},
+  {path: "donneespersonnelles", component: DonneespersonnellesComponent},
   {path: "**", pathMatch:'full', component: Page404Component} 
 ];
 
