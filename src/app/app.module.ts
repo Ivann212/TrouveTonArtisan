@@ -9,6 +9,10 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ListeArtisanComponent } from './liste-artisan/liste-artisan.component';
 import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
 import { Page404Component } from './page404/page404.component';
+import { BatimentComponent } from './batiment/batiment.component';
+import { ServicesComponent } from './services/services.component';
+import { FabricationComponent } from './fabrication/fabrication.component';
+import { AlimentationComponent } from './alimentation/alimentation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { Page404Component } from './page404/page404.component';
     AccueilComponent,
     ListeArtisanComponent,
     FicheArtisanComponent,
-    Page404Component
+    Page404Component,
+    BatimentComponent,
+    ServicesComponent,
+    FabricationComponent,
+    AlimentationComponent
   ],
   imports: [
     BrowserModule,
