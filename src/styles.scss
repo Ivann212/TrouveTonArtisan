@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: "Graphik";
+    src:url('../src/assets/font/Graphik-Medium-Trial.otf');
+}
+body {
+    font-family: "Graphik";
+}
