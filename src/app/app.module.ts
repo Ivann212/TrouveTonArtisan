@@ -17,6 +17,9 @@ import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.co
 import { DonneespersonnellesComponent } from './donneespersonnelles/donneespersonnelles.component';
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { SortbynotePipe } from './sortbynote.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { CookiesComponent } from './cookies/cookies.component';
     MentionsLegalesComponent,
     DonneespersonnellesComponent,
     AccessibiliteComponent,
-    CookiesComponent
+    CookiesComponent,
+    SortbynotePipe
   ],
   imports: [
     BrowserModule,

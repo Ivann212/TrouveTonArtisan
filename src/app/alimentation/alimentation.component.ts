@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './alimentation.component.html',
   styleUrl: './alimentation.component.scss'
 })
+
 export class AlimentationComponent {
 
 }

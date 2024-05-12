@@ -1,5 +1,9 @@
-footer {
-    bottom: 0;
-    right: 0;
-    left: 0;
+main {
+    ul {
+        list-style: decimal;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+    
 }
