@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SortbynotePipe implements PipeTransform {
 
-  transform(produits: any[]): any[] {
-    return produits.sort((a:any,b: any) => {return b.note - a.note});  }
+  transform(artisans: any[]): any[] {
+    return artisans.sort((a:any,b: any) => {return b.note - a.note});  }
 
 }

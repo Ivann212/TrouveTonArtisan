@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasService } from '../datas.service';
 
 
 
@@ -8,12 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './accueil.component.scss'
 })
 export class AccueilComponent implements OnInit {
-  
 
-  constructor() { }
+  artisans:any[] = [];
 
-  ngOnInit() {
-    
+  constructor( private DatasService: DatasService) { }
+
+  ngOnInit(): void {
+    this.artisans = this.DatasService.artisans
   }
 }
 
