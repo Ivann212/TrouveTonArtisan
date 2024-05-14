@@ -212,4 +212,7 @@ export class DatasService {
   ]
 
   constructor() { }
+  getArtisansByCategory(category: string) {
+    return this.artisans.filter(artisan => artisan.category.toLowerCase() ===category.toLowerCase())
+  }
 }

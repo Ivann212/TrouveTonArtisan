@@ -1,6 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import path from 'path';
+
 
 import { AccueilComponent } from './accueil/accueil.component';
 import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
@@ -14,9 +14,12 @@ import { CookiesComponent } from './cookies/cookies.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { DonneespersonnellesComponent } from './donneespersonnelles/donneespersonnelles.component';
-
+import { CategoryComponent } from './category/category.component';
 const routes: Routes = [
+  
+
   {path: "", component: AccueilComponent}, 
+  {path: "category/:category", component: CategoryComponent},
   {path: "ficheArtisan", component: FicheArtisanComponent}, 
   {path: "listeArtisan", component: ListeArtisanComponent}, 
   {path: "service", component: ServicesComponent}, 

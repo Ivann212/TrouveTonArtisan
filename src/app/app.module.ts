@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { DonneespersonnellesComponent } from './donneespersonnelles/donneesperso
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { SortbynotePipe } from './sortbynote.pipe';
+import { CategoryComponent } from './category/category.component';
+
 
 
 
@@ -26,6 +29,7 @@ import { SortbynotePipe } from './sortbynote.pipe';
   declarations: [
     AppComponent,
     HeaderComponent,
+    CategoryComponent,
     FooterComponent,
     AccueilComponent,
     ListeArtisanComponent,
@@ -39,11 +43,14 @@ import { SortbynotePipe } from './sortbynote.pipe';
     DonneespersonnellesComponent,
     AccessibiliteComponent,
     CookiesComponent,
-    SortbynotePipe
+    SortbynotePipe,
+    
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
