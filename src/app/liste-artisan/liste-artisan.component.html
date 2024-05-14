@@ -1,1 +1,25 @@
-<p>liste-artisan works!</p>
+
+<header>
+  <app-header></app-header>
+</header>
+
+<main class="main">
+  <div class="row col-lg-12 d-flex justify-content-evenly">
+
+    <div class="card col-md-6 mb-4 p-4" *ngFor="let artisan of artisans">
+      <div class="card-body">
+        <h5 class="card-title fw-bolder">{{artisan.name}}</h5>
+        <p class="card-text fw-semibold">{{artisan.specialty}}</p>
+        <p class="card-text fw-semibold">{{artisan.note}}</p>
+        <p class="card-text fw-semibold">{{artisan.location}}</p>
+        <button type="button" id="bouton" class="btn btn-primary">Voir</button>
+      </div>
+                
+    </div>
+  </div>
+  
+</main>
+
+<footer>
+  <app-footer></app-footer>
+</footer>
