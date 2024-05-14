@@ -16,6 +16,8 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
     this.artisans = this.DatasService.artisans
+    console.log(this.artisans.slice(0,3));
   }
+  
 }
 
