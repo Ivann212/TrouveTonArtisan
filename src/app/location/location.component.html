@@ -1,0 +1,29 @@
+<header>
+    <app-header/>
+</header>
+<main>
+    <div *ngIf="artisans.length > 0; else noArtisans">
+        <h2>Les artisans situé à:  {{ location }}</h2>
+        <div class="row col-lg-12 d-flex justify-content-evenly">
+            <div *ngFor="let artisan of artisans" class="card col-md-6 mb-4 p-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder">{{artisan.name}}</h5>
+                    <p class="card-text fw-semibold">{{artisan.specialty}}</p>
+                    <p class="card-text fw-semibold">{{artisan.note}}</p>
+                    <p class="card-text fw-semibold">{{artisan.location}}</p>
+                </div>
+                
+            </div>
+
+        </div>
+        
+    </div>
+    <ng-template #noArtisans>
+        <p>Il n'y a pas d'artisans dans cette catégorie</p>
+    </ng-template>
+</main>
+
+<footer>
+    <app-footer/>
+</footer>
+

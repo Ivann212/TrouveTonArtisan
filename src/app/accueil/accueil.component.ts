@@ -1,23 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { DatasService } from '../datas.service';
 
-
-
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styleUrl: './accueil.component.scss'
+  styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent implements OnInit {
+  artisans: any[] = [];
+  topArtisans: any[] = [];
 
-  artisans:any[] = [];
-
-  constructor( private DatasService: DatasService) { }
+  constructor(private datasService: DatasService) { }
 
   ngOnInit(): void {
-    this.artisans = this.DatasService.artisans
-    console.log(this.artisans.slice(0,3));
+    this.artisans = this.datasService.artisans;
+    
   }
-  
 }
-

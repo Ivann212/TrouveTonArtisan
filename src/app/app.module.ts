@@ -10,16 +10,14 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ListeArtisanComponent } from './liste-artisan/liste-artisan.component';
 import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
 import { Page404Component } from './page404/page404.component';
-import { BatimentComponent } from './batiment/batiment.component';
-import { ServicesComponent } from './services/services.component';
-import { FabricationComponent } from './fabrication/fabrication.component';
-import { AlimentationComponent } from './alimentation/alimentation.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 import { DonneespersonnellesComponent } from './donneespersonnelles/donneespersonnelles.component';
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { SortbynotePipe } from './sortbynote.pipe';
 import { CategoryComponent } from './category/category.component';
+import { NameComponent } from './name/name.component';
+import { LocationComponent } from './location/location.component';
 
 
 
@@ -35,15 +33,13 @@ import { CategoryComponent } from './category/category.component';
     ListeArtisanComponent,
     FicheArtisanComponent,
     Page404Component,
-    BatimentComponent,
-    ServicesComponent,
-    FabricationComponent,
-    AlimentationComponent,
     MentionsLegalesComponent,
     DonneespersonnellesComponent,
     AccessibiliteComponent,
     CookiesComponent,
     SortbynotePipe,
+    NameComponent,
+    LocationComponent,
     
   ],
 

@@ -15,6 +15,11 @@ export class HeaderComponent {
     event.preventDefault();
     if (this.searchQuery) {
       this.router.navigate(['/category', this.searchQuery.toLowerCase()]);
+      this.router.navigate(['/name', this.searchQuery.toLowerCase()]);
+      this.router.navigate(['/location', this.searchQuery.toLowerCase()]);
     }
-  }
+  };
+
+ 
+  
 }

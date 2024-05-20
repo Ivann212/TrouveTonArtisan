@@ -214,5 +214,11 @@ export class DatasService {
   constructor() { }
   getArtisansByCategory(category: string) {
     return this.artisans.filter(artisan => artisan.category.toLowerCase() ===category.toLowerCase())
+  };
+  getArtisansByName(name: string) {
+    return this.artisans.filter(artisan => artisan.name.toLowerCase() ===name.toLowerCase())
+  };
+  getArtisansByLocation(location: string) {
+    return this.artisans.filter(artisan => artisan.location.toLowerCase() ===location.toLowerCase())
   }
 }
