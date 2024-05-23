@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatasService } from '../datas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-category',
@@ -13,7 +14,7 @@ export class CategoryComponent implements OnInit {
   name: string = '';
   location: string = '';
 
-  constructor(private route: ActivatedRoute, private datasService: DatasService) { }
+  constructor(private route: ActivatedRoute, private datasService: DatasService, private router: Router ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -29,6 +30,9 @@ export class CategoryComponent implements OnInit {
       this.location = params.get('location')!;
       this.artisans = this.datasService.getArtisansByLocation(this.location);
     })
+  }
+  viewArtisan(id: number): void{
+    this.router.navigate(['/artisan', id])
   }
 }
 

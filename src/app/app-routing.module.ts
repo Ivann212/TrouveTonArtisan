@@ -22,7 +22,7 @@ const routes: Routes = [
   {path: "category/:category", component: CategoryComponent},
   {path: "location/:location", component: LocationComponent},
   {path: "name/:name", component: NameComponent},
-  {path: "ficheArtisan", component: FicheArtisanComponent}, 
+  {path: "artisan/:id", component: FicheArtisanComponent}, 
   {path: "listeArtisan", component: ListeArtisanComponent},  
   {path: "cookies", component: CookiesComponent},
   {path: "mentionslegales", component: MentionsLegalesComponent},

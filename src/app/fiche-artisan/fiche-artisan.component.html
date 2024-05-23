@@ -1,12 +1,19 @@
 <header>
     <app-header></app-header>
-</header>
+  </header>
   
-<main class="main">
-    
-    
-</main>
-
-<footer>
+  <main class="main">
+    <div *ngIf="artisan">
+      <h1>{{ artisan.name }}</h1>
+      <p>Specialty: {{ artisan.specialty }}</p>
+      <p>Note: {{ artisan.note }}</p>
+      <p>Location: {{ artisan.location }}</p>
+      <p>About: {{ artisan.about }}</p>
+      <p>Email: {{ artisan.email }}</p>
+      <a *ngIf="artisan.website" [href]="artisan.website" target="_blank">Website</a>
+    </div>
+  </main>
+  
+  <footer>
     <app-footer></app-footer>
-</footer>
+  </footer>
