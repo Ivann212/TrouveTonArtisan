@@ -1,19 +1,23 @@
 <header>
-    <app-header></app-header>
-  </header>
+  <app-header></app-header>
+</header>
   
-  <main class="main">
-    <div *ngIf="artisan">
-      <h1>{{ artisan.name }}</h1>
-      <p>Specialty: {{ artisan.specialty }}</p>
-      <p>Note: {{ artisan.note }}</p>
-      <p>Location: {{ artisan.location }}</p>
-      <p>About: {{ artisan.about }}</p>
-      <p>Email: {{ artisan.email }}</p>
-      <a *ngIf="artisan.website" [href]="artisan.website" target="_blank">Website</a>
+<main class="main">
+  <div class="row col-lg-12 d-flex justify-content-evenly">
+    <div class="card col-md-6 p-4 mt-5" *ngIf="artisan">
+      <div class="card-body">
+        <h1>{{ artisan.name }}</h1>
+        <p>Note: {{ artisan.note | note }}</p>
+        <p>Spécialité: {{ artisan.specialty }}</p>
+        <p>emplacement: {{ artisan.location }}</p>
+        <p>A propos: {{ artisan.about }}</p>
+        <p>Email: {{ artisan.email }}</p>
+        <a *ngIf="artisan.website" [href]="artisan.website" target="_blank">site internet de l'artisan</a>
+      </div>           
     </div>
-  </main>
+  </div>
+</main>
   
-  <footer>
-    <app-footer></app-footer>
-  </footer>
+<footer>
+  <app-footer></app-footer>
+</footer>

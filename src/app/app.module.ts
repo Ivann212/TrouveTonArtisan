@@ -18,6 +18,7 @@ import { SortbynotePipe } from './sortbynote.pipe';
 import { CategoryComponent } from './category/category.component';
 import { NameComponent } from './name/name.component';
 import { LocationComponent } from './location/location.component';
+import { NotePipe } from './note.pipe';
 
 
 
@@ -40,6 +41,7 @@ import { LocationComponent } from './location/location.component';
     SortbynotePipe,
     NameComponent,
     LocationComponent,
+    NotePipe,
     
   ],
 
