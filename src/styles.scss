@@ -4,9 +4,15 @@
     src:url('../src/assets/font/Graphik-Medium-Trial.otf');
 }
 body {
+    background-color: #f1f8fc;
     font-family: "Graphik";
     height: 100%;
     margin-bottom: -10;
     padding: -10;
+    .card {
+        width: 23rem;
+        margin-top: 10px;
+        text-align: center;
+    }
     
 }

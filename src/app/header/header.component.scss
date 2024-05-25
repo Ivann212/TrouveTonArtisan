@@ -1,5 +1,6 @@
 nav {
-    background-color: #0074C7;
+    background-color: #f1f8fc;
+    box-shadow: 0px 4px 4px rgba(0,0,0, 0.1);
     color: #384050;
     font-size: 1.2em;
     img {
@@ -9,9 +10,13 @@ nav {
         width: 400px;
         button {
             color: #0074C7;
-            background-color: #384050;
-            border-color: #384050;
+            border-radius: 50%;
         }
+        .btn:hover {
+            background-color: #00497c;
+            color: #f1f8fc;
+        }
+        
     }
     
 }
