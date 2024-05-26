@@ -11,15 +11,10 @@ export class HeaderComponent {
 
   constructor(private router: Router) { }
 
-  onSearch(event: Event) {
-    event.preventDefault();
+  search() {
     if (this.searchQuery) {
-      this.router.navigate(['/category', this.searchQuery.toLowerCase()]);
-      this.router.navigate(['/name', this.searchQuery.toLowerCase()]);
-      this.router.navigate(['/location', this.searchQuery.toLowerCase()]);
+      // Assuming the search query is for a category
+      this.router.navigate(['/category', this.searchQuery]);
     }
-  };
-
- 
-  
+  }
 }

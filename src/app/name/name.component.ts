@@ -5,9 +5,9 @@ import { DatasService } from '../datas.service';
 @Component({
   selector: 'app-name',
   templateUrl: './name.component.html',
-  styleUrl: './name.component.scss'
+  styleUrls: ['./name.component.scss']
 })
-export class NameComponent {
+export class NameComponent implements OnInit {
   artisans: any[] = [];
   name: string = '';
 
@@ -17,6 +17,6 @@ export class NameComponent {
     this.route.paramMap.subscribe(params => {
       this.name = params.get('name')!;
       this.artisans = this.datasService.getArtisansByName(this.name);
-    })
+    });
   }
 }

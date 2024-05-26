@@ -5,9 +5,9 @@ import { DatasService } from '../datas.service';
 @Component({
   selector: 'app-location',
   templateUrl: './location.component.html',
-  styleUrl: './location.component.scss'
+  styleUrls: ['./location.component.scss']
 })
-export class LocationComponent {
+export class LocationComponent implements OnInit {
   artisans: any[] = [];
   location: string = '';
 
@@ -17,6 +17,6 @@ export class LocationComponent {
     this.route.paramMap.subscribe(params => {
       this.location = params.get('location')!;
       this.artisans = this.datasService.getArtisansByLocation(this.location);
-    })
+    });
   }
 }
