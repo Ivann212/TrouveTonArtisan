@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { DatasService } from '../datas.service';
-
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-name',
-  templateUrl: './name.component.html',
-  styleUrls: ['./name.component.scss']
+  selector: 'app-specialty',
+  templateUrl: './specialty.component.html',
+  styleUrl: './specialty.component.scss'
 })
-export class NameComponent implements OnInit {
+export class SpecialtyComponent {
   artisans: any[] = [];
-  name: string = '';
+  specialty: string = '';
 
   constructor(private route: ActivatedRoute, private datasService: DatasService , private router: Router) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.name = params.get('name')!;
-      this.artisans = this.datasService.getArtisansByName(this.name);
+      this.specialty = params.get('specialty')!;
+      this.artisans = this.datasService.getArtisansBySpecialty(this.specialty);
     });
-    
   }
   viewArtisan(id: number): void{
     this.router.navigate(['/artisan', id])
   }
+
 }

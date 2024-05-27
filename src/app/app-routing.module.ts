@@ -13,6 +13,7 @@ import { DonneespersonnellesComponent } from './donneespersonnelles/donneesperso
 import { CategoryComponent } from './category/category.component';
 import { NameComponent } from './name/name.component';
 import { LocationComponent } from './location/location.component';
+import { SpecialtyComponent } from './specialty/specialty.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: "category/:category", component: CategoryComponent},
   {path: "location/:location", component: LocationComponent},
   {path: "name/:name", component: NameComponent},
+  {path: "specialty/:specialty", component: SpecialtyComponent},
   {path: "artisan/:id", component: FicheArtisanComponent}, 
   {path: "listeArtisan", component: ListeArtisanComponent},  
   {path: "cookies", component: CookiesComponent},

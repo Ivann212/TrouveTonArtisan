@@ -220,5 +220,8 @@ export class DatasService {
   };
   getArtisansByLocation(location: string) {
     return this.artisans.filter(artisan => artisan.location.toLowerCase() ===location.toLowerCase())
+  };
+  getArtisansBySpecialty(specialty: string) {
+    return this.artisans.filter(artisan => artisan.specialty.toLowerCase() ===specialty.toLowerCase())
   }
 }

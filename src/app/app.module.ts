@@ -19,6 +19,7 @@ import { CategoryComponent } from './category/category.component';
 import { NameComponent } from './name/name.component';
 import { LocationComponent } from './location/location.component';
 import { NotePipe } from './note.pipe';
+import { SpecialtyComponent } from './specialty/specialty.component';
 
 
 
@@ -42,6 +43,7 @@ import { NotePipe } from './note.pipe';
     NameComponent,
     LocationComponent,
     NotePipe,
+    SpecialtyComponent,
     
   ],
 

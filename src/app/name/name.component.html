@@ -9,8 +9,9 @@
                 <div class="card-body">
                     <h5 class="card-title fw-bolder">{{artisan.name}}</h5>
                     <p class="card-text fw-semibold">{{artisan.specialty}}</p>
-                    <p class="card-text fw-semibold">{{artisan.note}}</p>
+                    <p class="card-text fw-semibold">{{artisan.note | note}}</p>
                     <p class="card-text fw-semibold">{{artisan.location}}</p>
+                    <button (click)="viewArtisan(artisan.id)" type="button" id="bouton" class="btn btn-primary">Voir</button>
                 </div>
                 
             </div>
@@ -19,7 +20,7 @@
         
     </div>
     <ng-template #noArtisans>
-        <p>Il n'y a pas d'artisans dans cette catégorie</p>
+        <p>Il n'y a pas d'artisans dont le nom est: {{ name }}</p>
     </ng-template>
 </main>
 

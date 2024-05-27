@@ -3,7 +3,7 @@
 </header>
 <main>
     <div *ngIf="artisans.length > 0; else noArtisans">
-        <h2>Les artisans situé à:  {{ location }}</h2>
+        <h2>Les artisans dont le nom est:  {{ specialty }}</h2>
         <div class="row col-lg-12 d-flex justify-content-evenly">
             <div *ngFor="let artisan of artisans" class="card col-md-6 mb-4 p-4">
                 <div class="card-body">
@@ -20,11 +20,10 @@
         
     </div>
     <ng-template #noArtisans>
-        <p>Il n'y a pas d'artisans dont la localisation est: {{ location }}</p>
+        <p>Il n'y a pas d'artisans dont le nom est: {{ specialty }}</p>
     </ng-template>
 </main>
 
 <footer>
     <app-footer/>
 </footer>
-

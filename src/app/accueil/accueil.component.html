@@ -3,7 +3,7 @@
 </header>
 
 <main class="main">
-  <h1 class="d-flex justify-content-center pt-5">Comment trouver mon artisan</h1>
+  <h1 class="d-flex justify-content-center pt-5">Comment trouver mon artisan ?</h1>
   <ul class="d-flex flex-column align-items-center pt-4">
     <li>Choisir la catégorie d'artisanat dans le menu</li>
     <li>Choisir un artisan</li>
@@ -14,8 +14,8 @@
     <div class="card col-md-6 mb-5 p-4" *ngFor="let artisan of (artisans | sortbynote).slice(0, 3)">
       <div class="card-body">
           <h4 class="card-title fw-bolder">{{artisan.name}}</h4>
-          <p class="card-text fw-semibold">{{artisan.specialty}}</p>
           <p class="card-text fw-semibold">{{artisan.note | note}}</p>
+          <p class="card-text fw-semibold">{{artisan.specialty}}</p>
           <p class="card-text fw-semibold">{{artisan.location}}</p>
           <button type="button" id="bouton" class="btn btn-primary" (click)="viewArtisan(artisan.id)">Voir</button>
       </div>

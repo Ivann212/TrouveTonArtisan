@@ -10,5 +10,14 @@
             width: 30px;
         }
     }
+    .btn {
+        color: #0074C7;
+        background-color: #f1f8fc;
+        border-color: #f1f8fc;
+    }
+    .dropdown-item:hover {
+        background-color: #0074C7;
+        color: #f1f8fc;
+    }
     
 }

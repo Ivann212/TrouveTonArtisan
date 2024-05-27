@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   searchQuery: string = '';
+  searchType: string = 'name';  // Valeur par défaut
 
   constructor(private router: Router) { }
 
   search() {
     if (this.searchQuery) {
-      // Assuming the search query is for a category
-      this.router.navigate(['/category', this.searchQuery]);
+      this.router.navigate([`/${this.searchType}`, this.searchQuery]);
     }
   }
 }
