@@ -1,8 +1,40 @@
 $btncolor: #0074C7;
 @media (max-width: 425px) {
     
+    header {
+        width: 320px;
+    }
     img {
         width: 100px;
+    }
+    form {
+        width: 200px;
+    }
+}
+@media (min-width: 426px) {
+    nav {
+        padding-right: 130px;
+    }
+    img {
+        width: 250px;
+        
+    }
+    form {
+        width: 300px;
+    }
+    select {
+        width: 150px;
+    }
+}
+@media (min-width: 1024px) {
+    img {
+        width: 250px;
+    }
+    form {
+        width: 400px;
+    }
+    select {
+        width: 200px;
     }
 }
 
@@ -14,18 +46,14 @@ nav {
     #space {
         width: 150px;
     }
-    img {
-        width: 250px;
-    }
+    
     .nav-link:hover {
         background-color: $btncolor;
-        color: #f1f8fc;
-        
-        
+        color: #f1f8fc;   
     }
     form {
         margin-left: 50px;
-        width: 400px;
+        
         button {
             color: $btncolor;
             border-radius: 50%;
@@ -34,9 +62,7 @@ nav {
             background-color: $btncolor;
             color: #f1f8fc;
         } 
-        select {
-            width: 200px;
-        }
+        
     }
     #navbarResponsive {
         margin-right: 50px;
