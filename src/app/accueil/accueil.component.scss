@@ -1,5 +1,14 @@
+@media (max-width: 425px) {
+    main {
+        font-size: 1em;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
 main {
-    font-size: 1.2em;
+    
     ul {
         list-style: decimal;
         li {

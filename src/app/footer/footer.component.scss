@@ -1,11 +1,31 @@
+@media (max-width: 425px) {
+    address {
+        font-size: 0.7em;
+    }
+    .btn {
+        width: 120px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+@media (min-width:1024px) {
+    address {
+        padding-right: 200px;
+    }
+}
+
+
 .footer {
     background-color: #0074C7;
     color: #f1f8fc;
     display: flex;
     padding-top: 10px;
     address {
-        font-size: 0.9em;
-        padding-right: 200px;
+        
+        
         .imgfooter {
             width: 30px;
         }
