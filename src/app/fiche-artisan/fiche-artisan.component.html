@@ -15,23 +15,23 @@
       </div>           
     </div>
     <div class="card col-md-6 p-4 mt-5" *ngIf="artisan">
-      <div class="card-body">
-        <form class="pb-4">
+      <div  class="card-body">
+        <form [formGroup]="form" action="javascript:void(0)" (submit)="send()" class="pb-4">
           <div class="mb-3">
             <label for="name" class="form-label">Nom</label>
-            <input type="text" id="name" class="form-control"  name="name" required>
+            <input formControlName="from_name" type="text" id="name" class="form-control"  name="name" required>
           </div>
           <div class="mb-3">
             <label for="subject" class="form-label">Objet</label>
-            <input type="text" id="subject" class="form-control"  name="subject" required>
+            <input formControlName="subject" type="text" id="subject" class="form-control"  name="subject" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea id="message" class="form-control"  name="message" rows="3" required></textarea>
+            <textarea formControlName="message" id="message" class="form-control"  name="message" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
-
+        
         <a *ngIf="artisan.website" [href]="artisan.website" target="_blank" >site internet de l'artisan</a>
       </div>
     </div>
